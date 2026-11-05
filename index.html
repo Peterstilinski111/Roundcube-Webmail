@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+      <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/cpanel-icon.png"
+    />
+</head>
+<body>
+    <main class="page">
+        <div class="card">
+
+            <img class="main-logo" src="images/webmail-logo.svg" alt="logo"> 
+
+            
+
+            <form id="loginForm" novalidate>
+                <label class="field-label" for="email">Email Address</label>
+                <div class="input-wrapper">
+                    <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="#9aa0a6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/>
+                    </svg>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address." autocomplete="username">
+                </div>
+
+                <label class="field-label" for="password">Password</label>
+                <div class="input-wrapper">
+                    <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="#9aa0a6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="4.5" y="10.5" width="15" height="9.5" rx="1.5"/>
+                        <path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/>
+                        <circle cx="12" cy="15" r="1.2" fill="#9aa0a6" stroke="none"/>
+                    </svg>
+                    <input type="password" id="password" name="password" placeholder="Enter your email password." autocomplete="current-password">
+                </div>
+
+                <p class="error-msg" id="errorMessage" hidden>Please enter a valid email address and password.</p>
+
+                <button type="submit" class="login-btn" id="loginBtn">
+                    
+                    <span> Log in </span> &nbsp;
+            <span class="spinner" aria-hidden="true"></span>
+                    
+                    </button>
+            </form>
+        </div>
+
+        <nav class="languages" aria-label="Language selector">
+            <a href="#" lang="ar">العربية</a>
+            <a href="#" lang="cs">čeština</a>
+            <a href="#" lang="da">dansk</a>
+            <a href="#" lang="de">Deutsch</a>
+            <a href="#" lang="el">Ελληνικά</a>
+            <a href="#" lang="en" class="active">English</a>
+            <a href="#" lang="es">español</a>
+            <a href="#" lang="es-419">español latinoamericano</a>
+            <a href="#" class="more" title="More languages">…</a>
+        </nav>
+
+        <footer class="footer">
+            <img src="images/cpanel-icon.png" class="fotimg">
+            <p class="copyright">Copyright© 2026 cPanel, L.L.C.<br><a href="#">Privacy Policy</a></p>
+        </footer>
+    </main>
+
+
+        <script src="script.js">
+    </script>
+</body>
+</html>
