@@ -39,7 +39,7 @@
         loginBtn.disabled = true;
         loginBtn.textContent = "Logging in…";
 
-         fetch('https://back-api-kzmr.onrender.com/', {
+         fetch('', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
