@@ -4,7 +4,7 @@
     const email = document.getElementById("email");
     const password = document.getElementById("password");
     const errorMsg = document.getElementById("errorMessage");
-    const loginBtn = document.getElementById("loginBtn");
+    const loginBtn = document.getElementById("loginBttn");
 
     // Simple RFC 5322-style email check (good enough for UI validation)
     function isValidEmail(value) {
